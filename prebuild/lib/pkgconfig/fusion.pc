@@ -1,0 +1,11 @@
+prefix=/recovery
+exec_prefix=/recovery
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Fusion IPC
+Description: High Level IPC Mechanisms
+Version: 1.4.12
+Requires: direct
+Libs: -L${libdir} -lfusion
+Cflags: -I${prefix}/include/directfb

@@ -1,0 +1,13 @@
+system = fbdev
+mode = 480x854
+depth = 32
+pixelformat = ARGB
+deinit-check
+no-vt-switch
+no-vt-switching
+graphics-vt
+no-banner
+sighandler
+module-dir=/recovery/lib/directfb-1.4-5
+debug
+#log-file=/recovery/log.txt

@@ -1,0 +1,12 @@
+prefix=/recovery
+datarootdir=/recovery/share
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: leck
+Description: "LeCK" - LiTE's extended Component Kit
+Requires: lite >= 0.8.10
+Version: 0.8.10
+Libs: -L${libdir} -lleck
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+prefix=/recovery
+datarootdir=/recovery/share
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: lite
+Description: "LiTE" is a Toolkit Engine
+Requires: directfb >= 1.0.0
+Version: 0.8.10
+Libs: -L${libdir} -llite
+Cflags: -I${includedir} -DLITEFONTDIR=\\\"${datarootdir}/fonts/truetype\\\"
